@@ -183,6 +183,9 @@
             this.chkAutomation_FightArena = new System.Windows.Forms.CheckBox();
             this.chkAutomation_Events = new System.Windows.Forms.CheckBox();
             this.tabGeneral = new System.Windows.Forms.TabPage();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.txtGeneral_SellCardReserveThreshold = new System.Windows.Forms.TextBox();
             this.chkGeneral_DontLinkLowStarCards = new System.Windows.Forms.CheckBox();
             this.chkGeneral_AutoStoreReplays = new System.Windows.Forms.CheckBox();
             this.chkGeneral_ClaimWorldTreeRewards = new System.Windows.Forms.CheckBox();
@@ -232,9 +235,12 @@
             this.txtAccount_GameAccount = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabctrlSettings = new System.Windows.Forms.TabControl();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.txtGeneral_SellCardReserveThreshold = new System.Windows.Forms.TextBox();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.btn_Cthulhu_Deck = new System.Windows.Forms.Button();
+            this.txtDI_Cthulhu_DeckRunes = new System.Windows.Forms.TextBox();
+            this.txtDI_Cthulhu_DeckCards = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
             this.tabRaider.SuspendLayout();
             this.tabThieves.SuspendLayout();
             this.tabArena.SuspendLayout();
@@ -258,12 +264,13 @@
             this.tabAutomation.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.tabGeneral.SuspendLayout();
+            this.groupBox20.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabAccount.SuspendLayout();
             this.tabctrlSettings.SuspendLayout();
-            this.groupBox20.SuspendLayout();
+            this.groupBox21.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSave
@@ -1071,6 +1078,7 @@
             this.tabDemonInvasions_EK.AutoScroll = true;
             this.tabDemonInvasions_EK.AutoScrollMinSize = new System.Drawing.Size(0, 800);
             this.tabDemonInvasions_EK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(29)))), ((int)(((byte)(33)))));
+            this.tabDemonInvasions_EK.Controls.Add(this.groupBox21);
             this.tabDemonInvasions_EK.Controls.Add(this.chkDI_AvoidSniping_EK);
             this.tabDemonInvasions_EK.Controls.Add(this.groupBox18);
             this.tabDemonInvasions_EK.Controls.Add(this.groupBox17);
@@ -1107,7 +1115,7 @@
             this.groupBox18.Controls.Add(this.txtDI_SeaKing_DeckCards);
             this.groupBox18.Controls.Add(this.label59);
             this.groupBox18.ForeColor = System.Drawing.Color.White;
-            this.groupBox18.Location = new System.Drawing.Point(16, 841);
+            this.groupBox18.Location = new System.Drawing.Point(16, 931);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(814, 92);
             this.groupBox18.TabIndex = 57;
@@ -1170,7 +1178,7 @@
             this.groupBox17.Controls.Add(this.txtDI_PlagueOgryn_DeckCards);
             this.groupBox17.Controls.Add(this.label37);
             this.groupBox17.ForeColor = System.Drawing.Color.White;
-            this.groupBox17.Location = new System.Drawing.Point(16, 744);
+            this.groupBox17.Location = new System.Drawing.Point(16, 834);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(814, 92);
             this.groupBox17.TabIndex = 57;
@@ -1233,7 +1241,7 @@
             this.groupBox16.Controls.Add(this.txtDI_Pazuzu_DeckCards);
             this.groupBox16.Controls.Add(this.label35);
             this.groupBox16.ForeColor = System.Drawing.Color.White;
-            this.groupBox16.Location = new System.Drawing.Point(16, 646);
+            this.groupBox16.Location = new System.Drawing.Point(16, 737);
             this.groupBox16.Name = "groupBox16";
             this.groupBox16.Size = new System.Drawing.Size(814, 92);
             this.groupBox16.TabIndex = 58;
@@ -1296,7 +1304,7 @@
             this.groupBox8.Controls.Add(this.txtDI_Pandarus_DeckCards);
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.ForeColor = System.Drawing.Color.White;
-            this.groupBox8.Location = new System.Drawing.Point(16, 548);
+            this.groupBox8.Location = new System.Drawing.Point(16, 640);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(814, 92);
             this.groupBox8.TabIndex = 57;
@@ -1359,7 +1367,7 @@
             this.groupBox7.Controls.Add(this.txtDI_Mars_DeckCards);
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(16, 450);
+            this.groupBox7.Location = new System.Drawing.Point(16, 543);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(814, 92);
             this.groupBox7.TabIndex = 56;
@@ -1422,7 +1430,7 @@
             this.groupBox6.Controls.Add(this.txtDI_Deucalion_DeckCards);
             this.groupBox6.Controls.Add(this.label29);
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(16, 352);
+            this.groupBox6.Location = new System.Drawing.Point(16, 446);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(814, 92);
             this.groupBox6.TabIndex = 55;
@@ -1485,7 +1493,7 @@
             this.groupBox5.Controls.Add(this.txtDI_DarkTitan_DeckCards);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(16, 254);
+            this.groupBox5.Location = new System.Drawing.Point(16, 349);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(814, 92);
             this.groupBox5.TabIndex = 54;
@@ -1548,7 +1556,7 @@
             this.groupBox4.Controls.Add(this.txtDI_Bahamut_DeckCards);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(16, 156);
+            this.groupBox4.Location = new System.Drawing.Point(16, 155);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(814, 92);
             this.groupBox4.TabIndex = 53;
@@ -1941,6 +1949,36 @@
             this.tabGeneral.Size = new System.Drawing.Size(864, 455);
             this.tabGeneral.TabIndex = 5;
             this.tabGeneral.Text = "General";
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.label62);
+            this.groupBox20.Controls.Add(this.txtGeneral_SellCardReserveThreshold);
+            this.groupBox20.ForeColor = System.Drawing.Color.White;
+            this.groupBox20.Location = new System.Drawing.Point(402, 211);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(438, 139);
+            this.groupBox20.TabIndex = 34;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Card Selling";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.White;
+            this.label62.Location = new System.Drawing.Point(6, 23);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(148, 13);
+            this.label62.TabIndex = 24;
+            this.label62.Text = "Leave a reserve when selling:";
+            // 
+            // txtGeneral_SellCardReserveThreshold
+            // 
+            this.txtGeneral_SellCardReserveThreshold.Location = new System.Drawing.Point(29, 45);
+            this.txtGeneral_SellCardReserveThreshold.Name = "txtGeneral_SellCardReserveThreshold";
+            this.txtGeneral_SellCardReserveThreshold.Size = new System.Drawing.Size(141, 20);
+            this.txtGeneral_SellCardReserveThreshold.TabIndex = 25;
             // 
             // chkGeneral_DontLinkLowStarCards
             // 
@@ -2484,35 +2522,67 @@
             this.tabctrlSettings.Size = new System.Drawing.Size(872, 481);
             this.tabctrlSettings.TabIndex = 0;
             // 
-            // groupBox20
+            // groupBox21
             // 
-            this.groupBox20.Controls.Add(this.label62);
-            this.groupBox20.Controls.Add(this.txtGeneral_SellCardReserveThreshold);
-            this.groupBox20.ForeColor = System.Drawing.Color.White;
-            this.groupBox20.Location = new System.Drawing.Point(402, 211);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(438, 139);
-            this.groupBox20.TabIndex = 34;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Card Selling";
+            this.groupBox21.Controls.Add(this.label64);
+            this.groupBox21.Controls.Add(this.btn_Cthulhu_Deck);
+            this.groupBox21.Controls.Add(this.txtDI_Cthulhu_DeckRunes);
+            this.groupBox21.Controls.Add(this.txtDI_Cthulhu_DeckCards);
+            this.groupBox21.Controls.Add(this.label65);
+            this.groupBox21.ForeColor = System.Drawing.Color.White;
+            this.groupBox21.Location = new System.Drawing.Point(16, 252);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(814, 92);
+            this.groupBox21.TabIndex = 61;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Cthulhu";
             // 
-            // label62
+            // label64
             // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.Color.White;
-            this.label62.Location = new System.Drawing.Point(6, 23);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(148, 13);
-            this.label62.TabIndex = 24;
-            this.label62.Text = "Leave a reserve when selling:";
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.White;
+            this.label64.Location = new System.Drawing.Point(209, 62);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(41, 13);
+            this.label64.TabIndex = 51;
+            this.label64.Text = "Runes:";
             // 
-            // txtGeneral_SellCardReserveThreshold
+            // btn_Cthulhu_Deck
             // 
-            this.txtGeneral_SellCardReserveThreshold.Location = new System.Drawing.Point(29, 45);
-            this.txtGeneral_SellCardReserveThreshold.Name = "txtGeneral_SellCardReserveThreshold";
-            this.txtGeneral_SellCardReserveThreshold.Size = new System.Drawing.Size(141, 20);
-            this.txtGeneral_SellCardReserveThreshold.TabIndex = 25;
+            this.btn_Cthulhu_Deck.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Cthulhu_Deck.ForeColor = System.Drawing.Color.Black;
+            this.btn_Cthulhu_Deck.Location = new System.Drawing.Point(16, 19);
+            this.btn_Cthulhu_Deck.Name = "btn_Cthulhu_Deck";
+            this.btn_Cthulhu_Deck.Size = new System.Drawing.Size(131, 22);
+            this.btn_Cthulhu_Deck.TabIndex = 50;
+            this.btn_Cthulhu_Deck.Text = "(select deck)";
+            this.btn_Cthulhu_Deck.UseVisualStyleBackColor = false;
+            // 
+            // txtDI_Cthulhu_DeckRunes
+            // 
+            this.txtDI_Cthulhu_DeckRunes.Location = new System.Drawing.Point(256, 59);
+            this.txtDI_Cthulhu_DeckRunes.Name = "txtDI_Cthulhu_DeckRunes";
+            this.txtDI_Cthulhu_DeckRunes.Size = new System.Drawing.Size(550, 20);
+            this.txtDI_Cthulhu_DeckRunes.TabIndex = 47;
+            // 
+            // txtDI_Cthulhu_DeckCards
+            // 
+            this.txtDI_Cthulhu_DeckCards.Location = new System.Drawing.Point(256, 21);
+            this.txtDI_Cthulhu_DeckCards.Name = "txtDI_Cthulhu_DeckCards";
+            this.txtDI_Cthulhu_DeckCards.Size = new System.Drawing.Size(550, 20);
+            this.txtDI_Cthulhu_DeckCards.TabIndex = 45;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.White;
+            this.label65.Location = new System.Drawing.Point(211, 24);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(37, 13);
+            this.label65.TabIndex = 44;
+            this.label65.Text = "Cards:";
             // 
             // frmSettings
             // 
@@ -2579,6 +2649,8 @@
             this.groupBox19.PerformLayout();
             this.tabGeneral.ResumeLayout(false);
             this.tabGeneral.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -2588,8 +2660,8 @@
             this.tabAccount.ResumeLayout(false);
             this.tabAccount.PerformLayout();
             this.tabctrlSettings.ResumeLayout(false);
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2801,5 +2873,11 @@
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.TextBox txtGeneral_SellCardReserveThreshold;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Button btn_Cthulhu_Deck;
+        private System.Windows.Forms.TextBox txtDI_Cthulhu_DeckRunes;
+        private System.Windows.Forms.TextBox txtDI_Cthulhu_DeckCards;
+        private System.Windows.Forms.Label label65;
     }
 }

@@ -131,6 +131,7 @@
     <Compile Include="GameObjs\Hero.cs" />
     <Compile Include="GameObjs\Rune.cs" />
     <Compile Include="GameResourceManager.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="InputText.cs">
       <SubType>Form</SubType>
     </Compile>

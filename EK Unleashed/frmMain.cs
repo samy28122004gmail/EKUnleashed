@@ -3077,7 +3077,9 @@ namespace EKUnleashed
 
                             if (pack_name.ToLower().EndsWith("ard")) pack_name = pack_name + "s";
                             else if (pack_name.ToLower().EndsWith("ack")) pack_name = pack_name + "s";
+#pragma warning disable CS0642 // Possible mistaken empty statement
                             else if (pack_name.ToLower().EndsWith("acks") || pack_name.Contains(" X ")) ; // intentional empty statement
+#pragma warning restore CS0642 // Possible mistaken empty statement
                             else pack_name = pack_name + "card packs";
 
                             int iHowMany = Utils.CInt(Utils.Input_Text("Buy How Many", "How many " + pack_name + " would you like to buy?"));
@@ -3190,7 +3192,9 @@ namespace EKUnleashed
 
                         if (pack_name.ToLower().EndsWith("ard")) pack_name = pack_name + "s";
                         else if (pack_name.ToLower().EndsWith("ack")) pack_name = pack_name + "s";
+#pragma warning disable CS0642 // Possible mistaken empty statement
                         else if (pack_name.ToLower().EndsWith("acks") || pack_name.Contains(" X ")) ; // intentional empty statement
+#pragma warning restore CS0642 // Possible mistaken empty statement
                         else pack_name = pack_name + "card packs";
 
                         int iHowMany = Utils.CInt(Utils.Input_Text("Buy How Many", "How many " + pack_name + " would you like to buy?"));
@@ -3285,7 +3289,9 @@ namespace EKUnleashed
 
                         if (pack_name.ToLower().EndsWith("ard")) pack_name = pack_name + "s";
                         else if (pack_name.ToLower().EndsWith("ack")) pack_name = pack_name + "s";
+#pragma warning disable CS0642 // Possible mistaken empty statement
                         else if (pack_name.ToLower().EndsWith("acks") || pack_name.Contains(" X ")) ; // intentional empty statement
+#pragma warning restore CS0642 // Possible mistaken empty statement
                         else pack_name = pack_name + "card packs";
 
                         int iHowMany = Utils.CInt(Utils.Input_Text("Buy How Many", "How many " + pack_name + " would you like to buy?"));
@@ -3379,7 +3385,9 @@ namespace EKUnleashed
 
                         if (pack_name.ToLower().EndsWith("ard")) pack_name = pack_name + "s";
                         else if (pack_name.ToLower().EndsWith("ack")) pack_name = pack_name + "s";
+#pragma warning disable CS0642 // Possible mistaken empty statement
                         else if (pack_name.ToLower().EndsWith("acks") || pack_name.Contains(" X ")) ; // intentional empty statement
+#pragma warning restore CS0642 // Possible mistaken empty statement
                         else pack_name = pack_name + "card packs";
 
                         int iHowMany = Utils.CInt(Utils.Input_Text("Buy How Many", "How many " + pack_name + " would you like to buy?"));
@@ -3473,7 +3481,9 @@ namespace EKUnleashed
 
                         if (pack_name.ToLower().EndsWith("ard")) pack_name = pack_name + "s";
                         else if (pack_name.ToLower().EndsWith("ack")) pack_name = pack_name + "s";
+#pragma warning disable CS0642 // Possible mistaken empty statement
                         else if (pack_name.ToLower().EndsWith("acks") || pack_name.Contains(" X ")) ; // intentional empty statement
+#pragma warning restore CS0642 // Possible mistaken empty statement
                         else pack_name = pack_name + "card packs";
 
                         int iHowMany = Utils.CInt(Utils.Input_Text("Buy How Many", "How many " + pack_name + " would you like to buy?"));
@@ -3569,7 +3579,9 @@ namespace EKUnleashed
 
                         if (pack_name.ToLower().EndsWith("ard")) pack_name = pack_name + "s";
                         else if (pack_name.ToLower().EndsWith("ack")) pack_name = pack_name + "s";
+#pragma warning disable CS0642 // Possible mistaken empty statement
                         else if (pack_name.ToLower().EndsWith("acks") || pack_name.Contains(" X ")) ; // intentional empty statement
+#pragma warning restore CS0642 // Possible mistaken empty statement
                         else if (pack_name.ToLower().EndsWith("oken")) pack_name = pack_name + " cards";
                         else if (pack_name.ToLower().EndsWith("oupon")) pack_name = pack_name + " cards";
                         else pack_name = pack_name + " card packs";

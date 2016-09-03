@@ -3214,9 +3214,13 @@ namespace EKUnleashed
                                     int iAwardableStatus = Utils.CInt(jtTemp["CanAward"]);
 
                                     if (iAwardableStatus == -1) // already claimed
+#pragma warning disable CS0642 // Possible mistaken empty statement
                                         ;
+#pragma warning restore CS0642 // Possible mistaken empty statement
                                     else if (iAwardableStatus == 0) // can't claim yet
+#pragma warning disable CS0642 // Possible mistaken empty statement
                                         ;
+#pragma warning restore CS0642 // Possible mistaken empty statement
                                     else if (iAwardableStatus == 1) // ready to claim!
                                     {
                                         Utils.LoggerNotifications("<color=#ffa000>Accepted <b>" + jtTemp["AwardName"].ToString() + "</b> world tree reward for reaching " + Utils.CInt(jtTemp["Score"]).ToString("#,##0") + " points!</color>");
@@ -3242,7 +3246,9 @@ namespace EKUnleashed
                                         awarded_something = (Utils.CInt(rewards_claimed["status"]) == 1);
                                     }
                                     else // unknown status
+#pragma warning disable CS0642 // Possible mistaken empty statement
                                         ;
+#pragma warning restore CS0642 // Possible mistaken empty statement
                                 }
                                 catch { }
                             }

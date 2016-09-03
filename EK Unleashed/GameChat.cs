@@ -813,7 +813,9 @@ namespace EKUnleashed
                 else if (message == "pay")
                     Utils.Chatter("<color=#ffa000>[Notification]  Your payment was successful!</color>");
                 else if (message == "boss")
+#pragma warning disable CS0642 // Possible mistaken empty statement
                     ; // ignore this signal: it's faulty
+#pragma warning restore CS0642 // Possible mistaken empty statement
                 else if (message == "bossdie")
                     Utils.Chatter("<color=#ffa000>[Notification]  The demon invasion has ended -- the demon was slaughtered!</color>");
                 else if (message.StartsWith("bossaward"))
